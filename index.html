@@ -3,39 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY CUTU BABIE</title>
+    <title>Happy Anniversary!</title>
     <style>
         body {
-            background-color: #e327e0;
+            background-color: #f8bbd0; /* Pink background */
             font-family: 'Arial', sans-serif;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             height: 100vh;
             margin: 0;
+            text-align: center;
         }
 
         .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
             width: 100%;
+            max-width: 1200px;
+        }
+
+        .top-row, .bottom-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .box, .box-large {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            color: #fff;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px; /* Rounded corners */
+            text-align: center;
+            background-color: #f5f5dc; /* Beige fallback background */
+        }
+
+        .box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+            z-index: 1;
+        }
+
+        .box-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .box {
+            width: 100%;
+            max-width: 300px; /* Adjust as needed */
+            height: 200px; /* Adjust as needed */
+        }
+
+        .box-large {
+            width: 100%;
+            max-width: 600px; /* Adjust as needed */
+            height: 400px; /* Longer height for the middle box */
         }
 
         h1 {
-            color: #ff6b81;
-            font-size: 2.5em;
+            color: #fff;
+            font-size: 1.5em;
             margin-bottom: 10px;
         }
 
-        .message {
-            color: #333;
-            font-size: 1.2em;
-            line-height: 1.6;
+        p {
+            color: #fff;
+            font-size: 1em;
+            line-height: 1.4;
             margin: 15px 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Text shadow for better readability */
         }
 
         .footer {
@@ -43,30 +90,67 @@
         }
 
         .footer p {
-            color: #555;
-            font-size: 1.1em;
+            color: #fff;
+            font-size: 1em;
             margin: 5px 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Hey My Love 💖</h1>
-        <p class="message">
-            I just wanted to take a moment to remind you how deeply I love you. You mean the world to me, and I can't stop thinking about you. Every day, my love for you grows stronger and more profound 💋
-        </p>
-        <p class="message">
-            You bring so much joy and light into my life, and I am grateful for every moment we share. Your presence makes everything better, and I miss you so much when we are apart. I can't wait to hold you in my arms and feel your warmth ❤️
-        </p>
-        <p class="message">
-            You are my rock, my confidance, and my soulmate. Your love and affection make me feel like the luckiest person alive. I adore everything about you, from your beautiful smile to your kind heart 💝
-        </p>
-        <p class="message">
-            I love you more than words can express, and I am so lucky to have you in my life. Thank you for being you and for loving me so deeply 💟
-        </p>
-        <div class="footer">
-            <p>Always and forever,</p>
-            <p>Putu 💕</p>
+        <div class="top-row">
+            <div class="box box1" style="background-image: url('https://example.com/heart1.jpg');">
+                <div class="box-content">
+                    <h1>Happy Anniversary, My Love!</h1>
+                    <p>
+                        Today marks another beautiful milestone in our journey together. From the very first day we met, my life was transformed in ways I never imagined. Your love has been the guiding light that has illuminated even the darkest paths and made every moment together a treasured memory.
+                    </p>
+                </div>
+            </div>
+            <div class="box box2" style="background-image: url('https://example.com/heart2.jpg');">
+                <div class="box-content">
+                    <h1>Every Day with You</h1>
+                    <p>
+                        Every day with you feels like a celebration. Your laughter, your kindness, and the warmth you bring into my life are the greatest gifts I could ever ask for. I cherish the little moments—those spontaneous smiles, our quiet conversations, and the way you make even the mundane feel magical.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box box-large" style="background-image: url('https://example.com/heart3.jpg');">
+            <div class="box-content">
+                <h1>To Many More Years</h1>
+                <p>
+                    As we celebrate this special day, I am overwhelmed with gratitude for everything you are. You are my rock, my confidant, and my greatest adventure. With you by my side, I feel like I can conquer anything. You make me feel cherished and loved in ways that words cannot fully capture.
+                </p>
+                <p>
+                    I look back on our journey with nothing but joy and look forward to all the adventures yet to come. The future is bright with you in it, and I can't wait to continue building our dreams together. You are my soulmate, my best friend, and my one true love.
+                </p>
+                <p>
+                    Thank you for being you—for loving me so deeply and for making every day feel like a beautiful dream. Here’s to many more years of love, laughter, and happiness. I am beyond blessed to have you in my life, and I promise to treasure you always.
+                </p>
+                <div class="footer">
+                    <p>With all my love,</p>
+                    <p>Putu 💕</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-row">
+            <div class="box box4" style="background-image: url('https://example.com/heart4.jpg');">
+                <div class="box-content">
+                    <h1>My Heart is Yours</h1>
+                    <p>
+                        Your love has been the greatest gift of all. Every moment with you is a treasure, and I am grateful for every smile, every touch, and every memory we create together. You have truly captured my heart in every way.
+                    </p>
+                </div>
+            </div>
+            <div class="box box5" style="background-image: url('https://example.com/heart5.jpg');">
+                <div class="box-content">
+                    <h1>Endless Love</h1>
+                    <p>
+                        The love we share is endless and eternal. As we celebrate this anniversary, I want you to know that my love for you grows stronger every day. Here’s to a future filled with endless love and countless beautiful moments together.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
