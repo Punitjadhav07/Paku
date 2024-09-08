@@ -3,108 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Anniversary!</title>
+    <title>Punit Jadhav's Portfolio</title>
     <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            background-color: #f8bbd0; /* Pink background */
             font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
+            min-height: 100vh;
         }
 
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            max-width: 800px;
-            margin: 20px;
-        }
-
-        .box {
-            position: relative;
-            background-size: cover;
-            background-position: center;
+        /* Header Styling */
+        header {
+            background: #333;
             color: #fff;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px; /* Rounded corners */
-            text-align: center;
             padding: 20px;
-            box-sizing: border-box;
-            width: 100%;
-            height: auto;
-            max-width: 800px;
-            background-image: url('https://example.com/heart3.jpg'); /* Main background image */
-        }
-
-        .box::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4); /* Dark overlay */
-            z-index: 1;
-        }
-
-        .box-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             position: relative;
-            z-index: 2;
+        }
+
+        .profile-img img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            border: 3px solid #fff;
+            position: absolute;
+            top: 10px;
+            right: 10px;
         }
 
         h1 {
-            color: #fff;
-            font-size: 1.5em;
-            margin: 0;
+            font-size: 36px;
+        }
+
+        p.title {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Main Content Area */
+        main {
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #333;
             padding-bottom: 10px;
+            text-transform: uppercase;
         }
 
-        p {
+        .about p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Skills Section */
+        .skills ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            list-style: none;
+        }
+
+        .skills ul li {
+            background: #eee;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Projects Section */
+        .projects ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            list-style: none;
+        }
+
+        .projects ul li {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .projects ul li:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Certifications Section */
+        .certifications ul {
+            list-style: none;
+        }
+
+        .certifications ul li {
+            background: #eaeaea;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
             color: #fff;
-            font-size: 1em;
-            line-height: 1.4;
-            margin: 15px 0;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Text shadow for better readability */
+            padding: 20px;
+            text-align: center;
         }
 
-        .footer {
-            margin-top: 20px;
-        }
-
-        .footer p {
+        footer a {
             color: #fff;
-            font-size: 1em;
-            margin: 5px 0;
+            text-decoration: none;
+            margin: 0 10px;
         }
 
-        .heart {
-            font-size: 1.2em; /* Adjust size as needed */
-            display: inline;
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="box">
-            <div class="box-content">
-                <h1>Happy Anniversary, My Love!</h1>
-                <p>Today marks another beautiful milestone in our journey together. From the very first day we met, my life was transformed in ways I never imagined. Your love has been the guiding light that has illuminated even the darkest paths and made every moment together a treasured memory. ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</p>
-                <p>Every day with you feels like a celebration. Your laughter, your kindness, and the warmth you bring into my life are the greatest gifts I could ever ask for. I cherish the little moments—those spontaneous smiles, our quiet conversations, and the way you make even the mundane feel magical. 💖💖💖💖💖💖💖💖💖💖</p>
-                <p>As we celebrate this special day, I am overwhelmed with gratitude for everything you are. You are my rock, my confidant, and my greatest adventure. With you by my side, I feel like I can conquer anything. You make me feel cherished and loved in ways that words cannot fully capture. 💗💗💗💗💗💗💗💗💗💗</p>
-                <p>I look back on our journey with nothing but joy and look forward to all the adventures yet to come. The future is bright with you in it, and I can't wait to continue building our dreams together. You are my soulmate, my best friend, and my one true love. 💞💞💞💞💞💞💞💞💞💞</p>
-                <p>Thank you for being you—for loving me so deeply and for making every day feel like a beautiful dream. Here’s to many more years of love, laughter, and happiness. I am beyond blessed to have you in my life, and I promise to treasure you always. 💝💝💝💝💝💝💝💝💝💝</p>
-                <div class="footer">
-                    <p>With all my love,</p>
-                    <p>Putu 💕</p>
-                </div>
-            </div>
+    <header>
+        <div>
+            <h1>Punit Jadhav</h1>
+            <p class="title">Aspiring Full-Stack Developer</p>
         </div>
-    </div>
+        <div class="profile-img">
+            <img src="/Users/punitjadhav/Downloads/your-image.jpg" alt="Punit Jadhav">
+        </div>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I am a motivated IT engineering student with expertise in Python, SQL, Java, and hands-on experience in developing applications using Swing and Tkinter. Currently, I am learning Spring Boot, eager to contribute to innovative projects and grow as a full-stack developer.</p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Java</li>
+                <li>Swing</li>
+                <li>Tkinter</li>
+                <li>Spring Boot (Learning)</li>
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Library Management System</strong><br> Developed using Swing and MySQL.</li>
+                <li><strong>User-Friendly Application</strong><br> Created with Tkinter and MySQL for seamless task management.</li>
+            </ul>
+        </section>
+
+        <section class="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Python Certification - Revival Computers</li>
+                <li>Java Certification - Revival Computers</li>
+                <li>SQL Certification - Revival Computers</li>
+                <li>Computer Organization and Architecture (NPTEL)</li>
+                <li>TCS iON Career Edge - Young Professional</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Connect with me:</p>
+        <a href="https://github.com/Punitjadhav07">GitHub</a> | 
+        <a href="https://www.linkedin.com/in/punit-jadhav-001579236">LinkedIn</a>
+    </footer>
 </body>
 </html>
