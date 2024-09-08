@@ -31,6 +31,7 @@
             align-items: center;
             justify-content: space-between;
             position: relative;
+            border-bottom: 5px solid #555;
         }
 
         .profile-img img {
@@ -45,11 +46,23 @@
 
         h1 {
             font-size: 36px;
+            color: #e6e6e6;
         }
 
         p.title {
             font-size: 18px;
             margin-top: 10px;
+            color: #ccc;
+        }
+
+        /* Personal Information */
+        .personal-info {
+            margin-top: 20px;
+            color: #ddd;
+        }
+
+        .personal-info p {
+            margin-bottom: 8px;
         }
 
         /* Main Content Area */
@@ -75,6 +88,7 @@
         .about p {
             font-size: 18px;
             margin-bottom: 20px;
+            line-height: 1.8;
         }
 
         /* Skills Section */
@@ -92,6 +106,29 @@
             text-align: center;
             font-weight: bold;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .skills ul li:hover {
+            background: #dcdcdc;
+            transform: translateY(-5px);
+        }
+
+        .skills ul li img {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: -45px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .skills ul li:hover img {
+            opacity: 1;
         }
 
         /* Projects Section */
@@ -108,10 +145,12 @@
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
+            border-left: 5px solid #333;
         }
 
         .projects ul li:hover {
             transform: translateY(-5px);
+            border-left: 5px solid #555;
         }
 
         /* Certifications Section */
@@ -133,6 +172,7 @@
             color: #fff;
             padding: 20px;
             text-align: center;
+            border-top: 5px solid #555;
         }
 
         footer a {
@@ -151,35 +191,64 @@
         <div>
             <h1>Punit Jadhav</h1>
             <p class="title">Aspiring Full-Stack Developer</p>
-        </div>
-        <div class="profile-img">
-            <img src="/Users/punitjadhav/Downloads/your-image.jpg" alt="Punit Jadhav">
+            <div class="personal-info">
+                <p>Email: jadhavpunit30@gmail.com</p>
+                <p>GitHub: <a href="https://github.com/Punitjadhav07" target="_blank">Punitjadhav07</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/punit-jadhav-001579236" target="_blank">Punit Jadhav</a></p>
+                <p>Location: Vikhroli(E), Mumbai, Maharashtra, India</p>
+            </div>
         </div>
     </header>
 
     <main>
         <section class="about">
             <h2>About Me</h2>
-            <p>I am a motivated IT engineering student with expertise in Python, SQL, Java, and hands-on experience in developing applications using Swing and Tkinter. Currently, I am learning Spring Boot, eager to contribute to innovative projects and grow as a full-stack developer.</p>
+            <p>
+                I am an IT engineering student with a passion for software development and a keen interest in full-stack technologies. My journey in programming began with Python, where I quickly became proficient in scripting, data handling, and building interactive applications. I have also developed a solid foundation in SQL, enabling me to efficiently manage and manipulate databases.
+            </p>
+            <p>
+                In addition to Python and SQL, I am skilled in Java, which I have used to create robust desktop applications using the Swing framework. My hands-on experience with Tkinter further enhanced my ability to build user-friendly interfaces. Currently, I am expanding my skill set by learning Spring Boot, a powerful tool for creating dynamic and scalable web applications.
+            </p>
+            <p>
+                I am eager to contribute to innovative projects and collaborate with teams to deliver high-quality software solutions. My goal is to continuously grow as a full-stack developer and stay updated with the latest trends in technology. With strong problem-solving skills and a dedication to learning, I am confident in my ability to make a positive impact in any organization.
+            </p>
         </section>
 
         <section class="skills">
             <h2>Skills</h2>
             <ul>
-                <li>Python</li>
-                <li>SQL</li>
-                <li>Java</li>
-                <li>Swing</li>
-                <li>Tkinter</li>
-                <li>Spring Boot (Learning)</li>
+                <li>
+                    Python
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
+                </li>
+                <li>
+                    SQL
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL">
+                </li>
+                <li>
+                    Java
+                    <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java">
+                </li>
+                <li>
+                    Swing
+                    <img src="https://upload.wikimedia.org/wikipedia/en/e/e2/Java_Swing_logo.svg" alt="Swing">
+                </li>
+                <li>
+                    Tkinter
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Tkinter.png" alt="Tkinter">
+                </li>
+                <li>
+                    Spring Boot (Learning)
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Spring_Framework_Logo_2018.svg" alt="Spring Boot">
+                </li>
             </ul>
         </section>
 
         <section class="projects">
             <h2>Projects</h2>
             <ul>
-                <li><strong>Library Management System</strong><br> Developed using Swing and MySQL.</li>
-                <li><strong>User-Friendly Application</strong><br> Created with Tkinter and MySQL for seamless task management.</li>
+                <li><strong>Library Management System</strong><br> Developed using Swing and MySQL, this project facilitates efficient management of library resources and user interactions.</li>
+                <li><strong>User-Friendly Application</strong><br> Created with Tkinter and MySQL for seamless task management, offering a smooth user experience.</li>
             </ul>
         </section>
 
@@ -197,8 +266,4 @@
 
     <footer>
         <p>Connect with me:</p>
-        <a href="https://github.com/Punitjadhav07">GitHub</a> | 
-        <a href="https://www.linkedin.com/in/punit-jadhav-001579236">LinkedIn</a>
-    </footer>
-</body>
-</html>
+        <a href="https://github.com/Punitjadhav07" target="_blank">
